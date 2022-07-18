@@ -14,7 +14,7 @@
 </p>
 
 <p align="left">
-  💌 Quer entrar em contato? Siga um link ⤵️
+  💌 Quer entrar em contato? Acesse <a href="http://www.devsakae.me" target=_blank>meu portfolio</a> ou mande pelas redes sociais ⤵️
 </p>
 
 <p align="left">
