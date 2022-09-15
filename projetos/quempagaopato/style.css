@@ -1,0 +1,59 @@
+.pato {
+  background-image: url(https://www.nicepng.com/png/full/225-2250441_scrooge-mcduck-clipart-by9lxc-clipart-scrooge-mcduck-ducktales.png);
+  background-size: 200px 250px;
+  height: 250px;
+  width: 200px;
+}
+
+.title-heading {
+  background-color: yellow;
+  color: #3e3e3e;
+  height: 50px;
+  font-family: monospace;
+  font-size: xxx-large;
+  margin-bottom: -5px;
+}
+
+.p-explica {
+  color: black;
+  font-family: monospace;
+}
+
+.center {
+  padding: 10px;
+  text-align: center;
+}
+
+.pato-section {
+  padding-top: 20px;
+  text-align: left;
+}
+
+.car1 {
+  background-color: #00a6ff;
+  margin-left: 0px;
+  margin-bottom: 20px;
+}
+
+.car2 {
+  background-color: #cdaf16;
+  margin-left: 0px;
+}
+
+.button{
+  background-color: green;
+  color: white;
+  padding: 5px;
+  height: 35px;
+  width: 150px;
+  border-radius: 3px;
+}
+
+.grana {
+  float: right;
+  margin-top: -380px;
+  background-image: url(https://www.nicepng.com/png/full/107-1078764_bag-purse-transprent-free-download-saving-food-money.png);
+  background-size: 200px 250px;
+  height: 250px;
+  width: 200px;
+}
