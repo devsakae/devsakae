@@ -1,0 +1,155 @@
+body {
+    font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    line-height: 26px;
+}
+hr {
+    max-width: 85%;
+    margin-top: 35px;
+    margin-bottom: 35px;
+}
+
+#fundo {
+    position: fixed;
+    margin-top: -20px;
+    margin-left: -10px;
+    z-index: -1;
+    opacity: 0.5;
+}
+
+.logo {
+    font-family:system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    font-size: 24px;
+    position: fixed;
+    margin-left: 55px;
+}
+
+/* Menu sidebar sugerido pelo W3Schools */
+.sidenav {
+    width: 230px;
+    position: fixed;
+    z-index: 1;
+    top: 0;
+    left: 0;
+    overflow-x: hidden;
+    padding-top: 20px;
+    margin-top: 50px;
+}
+.sidenav a {
+    padding: 6px 8px 6px 16px;
+    text-decoration: none;
+    font-size: 25px;
+    color: #111111;
+    display: block;
+    text-align: right;
+}
+.sidenav a:hover {
+    color: #fefefe;
+    background-color: gray;
+  }
+.sidenav a:active {
+    color: white;
+    background-color: black;
+}
+.main {
+    margin-left: 250px;
+    margin-right: 15px;
+}
+
+.artemarcial {
+    text-align: justify;
+}
+
+.galeria {
+    float: center;
+/*     border: 2px black solid; */
+}
+
+.fotos {
+    display: inline-block;
+    width: 135px;
+    overflow: hidden;
+    position: relative;
+    margin-left: -5px;
+
+}
+
+.legenda {
+    display: none;
+}
+
+.fotos:hover {
+    width: 180px;
+    font-weight: bolder;
+}
+
+.fotos:hover .legenda {  
+    display: block;
+    font-size: 15px;
+    text-align: center;
+    padding: 12px;
+}
+
+/* Background de todas as faixas */
+.fotos:hover .legenda.branca {
+    background-color: white;
+}
+.fotos:hover .legenda.amarela {
+    background-color: yellow;
+}  
+.fotos:hover .legenda.azul {
+    background-color: blue;
+    color: white;
+}  
+.fotos:hover .legenda.vermelha {
+    background-color: red;
+}  
+.fotos:hover .legenda.bordo {
+    background-color: crimson;
+}  
+.fotos:hover .legenda.preta {
+    background-color: black;
+    color: white;
+}  
+.fotos:hover .legenda.laranja {
+    background-color: orange;
+}  
+.fotos:hover .legenda.verde {
+    background-color: green;
+    color: white;
+}  
+.fotos:hover .legenda.roxa {
+    background-color: purple;
+    color: white;
+}
+.fotos:hover .legenda.marrom {
+    background-color: brown;
+    color: white;
+}  
+.fotos:hover .legenda.castanha {
+    background-color:darkred;
+    color: white;
+}  
+
+
+
+.faixa {
+    max-height: 230px;
+    float: inline-start;
+    margin-bottom: -10px;
+    z-index: 4;
+    
+}
+.social {
+    width: 230px;
+    position: fixed;
+    bottom: 0;
+    left: 20px;
+    overflow-x: hidden;
+    padding-bottom: 20px;
+    margin-bottom: 50px;
+   
+}
+.footer {
+    text-align: center;
+
+}
