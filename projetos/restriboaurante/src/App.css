@@ -1,38 +1,61 @@
-.App {
-  text-align: center;
-}
-
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
-}
-
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
-}
-
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+main {
   display: flex;
-  flex-direction: column;
+  flex-flow: column;
+  margin: 0 auto;
+  width: 80vw;
   align-items: center;
   justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
 }
 
-.App-link {
-  color: #61dafb;
+@import url('https://fonts.googleapis.com/css?family=Lato');
+
+* {
+    box-sizing: border-box;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+body {
+    font-family: 'Lato', sans-serif;
+}
+
+h1 {
+    letter-spacing: 2px;
+    text-align: center;
+    text-transform: uppercase;
+}
+
+.countdown-wrapper {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+
+.countdown-item {
+    color: #111;
+    font-size: 40px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    line-height: 30px;
+    margin: 10px;
+    padding-top: 10px;
+    position: relative;
+    width: 100px;
+    height: 100px;
+}
+
+.countdown-item span {
+    color: #333;
+    font-size: 12px;
+    font-weight: 600;
+    text-transform: uppercase;
+}
+
+.countdown-svg {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100px;
+  height: 100px;
 }
