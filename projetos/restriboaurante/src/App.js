@@ -1,13 +1,18 @@
 import React, { Component } from "react";
 import './App.css'
+// Importação graças a ajuda do Washington
+const actions = require('./Oquefazer');
 
-class App extends Component {
+export default class App extends Component {
   state = {
     total: 0,
     minutes: 0,
     seconds: 0,
-    click: false,
-    pause: false
+  }
+
+  sorteiaAcao = (chave) => {
+    const random = Math.floor(Math.random() * actions[chave].length);
+    return actions[chave][random]
   }
 
   addTime = (min) => {
@@ -48,7 +53,7 @@ class App extends Component {
         total: input,
         click: true,
       }, () => {
-        this.timer() //para somente apos o valor ja estar setado , se nao daria erro
+        this.timer()
       })
     }
   }
@@ -72,132 +77,96 @@ class App extends Component {
   }
 
   render() {
-    const { total, click } = this.state;
+    const { total } = this.state;
     const minutes = Math.floor(total / 60);
     const seconds = total % 60;
-    const minutesRadius = mapNumber(minutes, 60, 0, 0, 360);
-    const secondsRadius = mapNumber(seconds, 60, 0, 0, 360);
-    
+
     return (
       <main>
-        <div>
-          Menu
+        <div className="header">
+          No intervalo vai dar tempo de...
         </div>
-        <div>
-          <button type="button" onClick={ () => this.addTime(0.05) }>
-            Teste (2 segundos)
-          </button>
-          <button type="button" onClick={ () => this.addTime(0.75) }>
-            Amendoim (45 segundos)
-          </button>
-        </div>
-        <div>
-          <button type="button" onClick={ () => this.addTime(1) }>
-            Bolacha (+1 minuto)
-          </button>
-          <button type="button" onClick={ () => this.addTime(1) }>
-            Bolacha (+1 minuto)
-          </button>
-        </div>
-        <div>
-          <button type="button" onClick={ () => this.addTime(3) }>
-            Café preto (+3 minutos)
-          </button>
-          <button type="button" onClick={ () => this.addTime(4) }>
-            Capuccino (+4 minutos)
-          </button>
-          <button type="button" onClick={ () => this.addTime(5) }>
-            Chocolate quente (+5 minutos)
-          </button>
-        </div>
-        { total === 0 ? click && <h4>Terminou o intervalo!</h4> :
-          (<div className="countdown-wrapper">
-              { minutes && (
-                  <div className="countdown-item">
-                      <SVGCircle radius={ minutesRadius } />
-                      { minutes.toString().padStart(2, "0") }
-                      <span>minutos</span>
-                  </div>
-              )}
-              { seconds && (
-                  <div className="countdown-item">
-                      <SVGCircle radius={ secondsRadius } />
-                      { seconds.toString().padStart(2, "0") }
-                      <span>segundos</span>
-                  </div>
-              )}
-          </div>)        
-        }
+        <div className="container">
+          <div className="cardapio">
+            <form className="form">
+              <fieldset className="section">
+                <legend>Clique para sortear outras ações</legend>
+                <div className="itens">
 
-        <div className="App">
-          <div className="functions">
+                  <label htmlFor="um">
+                    <div className="item">
+                      <div className="item-price">
+                        <input
+                          id="um"
+                          value="1"
+                          type="checkbox"
+                        />
+                        { this.sorteiaAcao('um') }
+                      </div>
+                      <div className="item-price">1 min</div>
+                    </div>
+                  </label>
 
-            <button onClick={this.timer}>Iniciar</button>
+                  <label htmlFor="umemeio">
+                    <div className="item">
+                      <div className="item-price">
+                        <input
+                          id="umemeio"
+                          value="1.5"
+                          type="checkbox"
+                        />
+                        { this.sorteiaAcao('umemeio') }
+                      </div>
+                      <div className="item-price">1 min 30 seg</div>
+                    </div>
+                  </label>
 
-            <button onClick={this.clear}>Pausar</button>
+                  <label htmlFor="dois">
+                    <div className="item">
+                      <div className="item-price">
+                        <input
+                          id="dois"
+                          value="1.5"
+                          type="checkbox"
+                        />
+                        { this.sorteiaAcao('dois') }
+                      </div>
+                      <div className="item-price">2 min</div>
+                    </div>
+                  </label>
 
-            <button onClick={this.limpaTudo}>Limpar</button>
+                </div>
+              </fieldset>
 
-            <button 
-            // style={{color:'blue'}} //tem que passar um obj para a chave styles
-            onClick={this.restart}>Recomeçar</button>
+
+              <div className="rodape">
+                <button onClick={this.timer}>Pedir!</button>
+                <button onClick={this.limpaTudo}>Novo pedido</button>
+              </div>
+            </form>            
           </div>
 
+
+          <div className="cronometro">
+          { total === 0 ? (<div>Faça o seu pedido</div>) :
+          (<div>
+            <center>Intervalo</center>
+            <div className="clock-container">
+              <div className="clock-column">
+                <p className="clock-minutes clock-timer">{ minutes.toString().padStart(2, "0") }</p>
+                <p className="clock-label">MINUTOS</p>
+              </div>
+
+              <div className="clock-column">
+                <p className="clock-seconds clock-timer">{ seconds.toString().padStart(2, "0") }</p>
+                <p className="clock-label">SEGUNDOS</p>
+              </div>
+            </div>
+          </div>)
+          }
           </div>
+        </div>
       </main>
     )
   }
 }
-
-const SVGCircle = ({ radius }) => (
-  <svg className="countdown-svg">
-      <path
-        fill="none"
-        stroke="#333"
-        strokeWidth="5"
-        d={describeArc(50, 50, 48, 0, radius)}
-      />
-  </svg>
-);
-
-// From StackOverflow: https://stackoverflow.com/questions/5736398/how-to-calculate-the-svg-path-for-an-arc-of-a-circle
-function polarToCartesian(centerX, centerY, radius, angleInDegrees) {
-  var angleInRadians = ((angleInDegrees - 90) * Math.PI) / 180.0;
-
-  return {
-      x: centerX + radius * Math.cos(angleInRadians),
-      y: centerY + radius * Math.sin(angleInRadians)
-  };
-}
-
-function describeArc(x, y, radius, startAngle, endAngle) {
-  var start = polarToCartesian(x, y, radius, endAngle);
-  var end = polarToCartesian(x, y, radius, startAngle);
-
-  var largeArcFlag = endAngle - startAngle <= 180 ? '0' : '1';
-
-  var d = [
-      'M',
-      start.x,
-      start.y,
-      'A',
-      radius,
-      radius,
-      0,
-      largeArcFlag,
-      0,
-      end.x,
-      end.y
-  ].join(' ');
-
-  return d;
-}
-
-// From StackOverflow: https://stackoverflow.com/questions/10756313/javascript-jquery-map-a-range-of-numbers-to-another-range-of-numbers
-function mapNumber(number, in_min, in_max, out_min, out_max) {
-  return (
-      ((number - in_min) * (out_max - out_min)) / (in_max - in_min) + out_min
-  );
-}
-
-export default App;
