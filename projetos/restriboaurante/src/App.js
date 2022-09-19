@@ -1,6 +1,7 @@
 import React, { Component } from "react";
 import Acoes from "./components/Acoes";
 import Timer from "./components/Timer";
+import Header from "./components/Header";
 import './App.css'
 
 export default class App extends Component {
@@ -11,7 +12,8 @@ export default class App extends Component {
     click: false,
   }
 
-  check = ({ target }) => {
+  check = (event) => {
+    const { target } = event;
     const qto = target.value * 60;
     this.setState((prevState) => ({
       total: target.checked ? Number(prevState.total + qto) : Number(prevState.total - qto),
@@ -45,9 +47,7 @@ export default class App extends Component {
 
     return (
       <main>
-        <div className="header">
-          Hora do intervalo! Aproveite para...
-        </div>
+        <Header />
         <div className="container">
           <Acoes
             check={ this.check }

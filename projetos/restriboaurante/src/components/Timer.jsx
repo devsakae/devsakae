@@ -19,7 +19,7 @@ export default class Timer extends Component {
             segundos: segundos - 1
           }))
       }
-      if (minutos === 1 && segundos === 1) console.log('FALTA 1 MINUTO');
+      if (minutos === 1 && segundos === 1) console.log('falta 1 minuto')
       if (segundos === 0) {
         if (minutos === 0) {
             clearInterval(this.myInterval)
