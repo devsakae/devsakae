@@ -19,6 +19,7 @@ export default class Timer extends Component {
             segundos: segundos - 1
           }))
       }
+      if (minutos === 1 && segundos === 1) console.log('FALTA 1 MINUTO');
       if (segundos === 0) {
         if (minutos === 0) {
             clearInterval(this.myInterval)
@@ -40,17 +41,17 @@ export default class Timer extends Component {
     const { minutos, segundos } = this.state;
     return (
       <div className="cronometro">
-      <div className="clock-container">
-        <div className="clock-column">
-          <p className="clock-minutes clock-timer">{ minutos }</p>
-          <p className="clock-label">MINUTOS</p>
-        </div>
-        <div className="clock-column">
-          <p className="clock-seconds clock-timer">{ segundos }</p>
-          <p className="clock-label">SEGUNDOS</p>
+        <div className="clock-container">
+          <div className="clock-column">
+            <p className="clock-minutes clock-timer">{ minutos }</p>
+            <p className="clock-label">MINUTOS</p>
+          </div>
+          <div className="clock-column">
+            <p className="clock-seconds clock-timer">{ segundos }</p>
+            <p className="clock-label">SEGUNDOS</p>
+          </div>
         </div>
       </div>
-    </div>
 
     )
   }
