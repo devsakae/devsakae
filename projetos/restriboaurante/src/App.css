@@ -85,13 +85,10 @@ main {
 
 /* clock container */
 .clock-container {
-	position: relative;
 	display: flex;
 	flex-direction: row;
 	justify-content: center;
 	align-items: center;
-	height: 20rem;
-	width: 60rem;
 	background-color: transparent;
 	border-radius: 3px;
 	box-shadow: none;
