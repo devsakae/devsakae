@@ -10,7 +10,7 @@
 </p>
 
 <p align="left">
-  💼 Ferramentas: <strong>VSCode, Office & Google tools</strong>
+  💼 Ferramentas: <strong>VSCode, Office & Google tools, Jest, RTL</strong>
 </p>
 
 <p align="left">
