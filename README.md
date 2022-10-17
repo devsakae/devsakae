@@ -1,16 +1,16 @@
 <img src="https://raw.githubusercontent.com/MicaelliMedeiros/micaellimedeiros/master/image/computer-illustration.png" min-width="400px" max-width="400px" width="400px" align="right" alt="Computador iuriCode">
 
 <p align="left"> 
-  Desenvolvedor web em desenvolvimento na <a href="http://www.betrybe.com">Trybe</a>.<br>
+  Desenvolvedor web em formação na <a href="http://www.betrybe.com">Trybe</a>.<br>
   Advogado, pai, apaixonado por música
 </p>
 
 <p align="left">
-  🦄 Linguagens: <strong>JavaScript</strong>, <strong>React</strong>.
+  🦄 Skills: <strong>JavaScript</strong>, <strong>React</strong>.
 </p>
 
 <p align="left">
-  💼 Ferramentas: <strong>VSCode, Office & Google tools, Jest, RTL</strong>
+  💼 Ferramentas: <strong>VSCode, Office & Google tools, Jest, RTL, Redux</strong>
 </p>
 
 <p align="left">
