@@ -6,7 +6,7 @@
 </p>
 
 <p align="left">
-  🦄 Skills: <strong>JavaScript</strong>, <strong>React</strong>.
+  🦄 Skills: <strong>HTML5, CSS3, JavaScript, React</strong>.
 </p>
 
 <p align="left">
