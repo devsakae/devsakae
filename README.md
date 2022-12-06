@@ -1,6 +1,8 @@
 <h1 align="center">Hi 👋, I'm Rodrigo Sakae</h1>
 <h3 align="center">Data protection officer, lawyer and web developer</h3>
 
+<p align="center">See my projects/portfolio at http://devsakae.me</p>
+
 <p align="left"> <a href="https://twitter.com/sakae" target="blank"><img src="https://img.shields.io/twitter/follow/sakae?logo=twitter&style=for-the-badge" alt="sakae" /></a> </p>
 
 <h3 align="left">Connect with me:</h3>
