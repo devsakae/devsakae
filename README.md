@@ -1,5 +1,5 @@
 <h1 align="center">Hi 👋, I'm Rodrigo Sakae</h1>
-<h3 align="center">Fullstack developer, lawyer and DPO</h3>
+<h3 align="center">Fullstack developer / DPO</h3>
 <p align="center">See <a href="https://www.devsakae.tech" target=_blank>my portfolio at devsakae.tech</a>.</p>
 
 <h3 align="left">Connect with me:</h3>
