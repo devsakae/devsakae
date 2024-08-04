@@ -1,6 +1,6 @@
 <h1 align="center">Hi 👋, I'm Rodrigo Sakae</h1>
 <h3 align="center">Fullstack developer / DPO</h3>
-<p align="center">See <a href="https://www.devsakae.tech" target=_blank>my portfolio at devsakae.tech</a>.</p>
+<p align="center">See <a href="https://devsakae.vercel.app" target=_blank>my portfolio</a>.</p>
 
 <h3 align="left">Connect with me:</h3>
 <p align="left">
