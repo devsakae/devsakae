@@ -2,12 +2,12 @@
 <h3 align="center">Fullstack developer / DPO</h3>
 <p align="center">See <a href="https://devsakae.vercel.app" target=_blank>my portfolio</a>.</p>
 
-<h3 align="left">Connect with me:</h3>
+<h3 align="left">You can find me heree:</h3>
 <p align="left">
-<a href="https://twitter.com/sakae" target="blank"><img align="center" src="https://raw.githubusercontent.com/rahuldkjain/github-profile-readme-generator/master/src/images/icons/Social/twitter.svg" alt="sakae" height="30" width="40" /></a>
+<!-- <a href="https://twitter.com/sakae" target="blank"><img align="center" src="https://raw.githubusercontent.com/rahuldkjain/github-profile-readme-generator/master/src/images/icons/Social/twitter.svg" alt="sakae" height="30" width="40" /></a> -->
 <a href="https://linkedin.com/in/rodrigosakae" target="blank"><img align="center" src="https://raw.githubusercontent.com/rahuldkjain/github-profile-readme-generator/master/src/images/icons/Social/linked-in-alt.svg" alt="rodrigosakae" height="30" width="40" /></a>
 <a href="https://fb.com/criciuma" target="blank"><img align="center" src="https://raw.githubusercontent.com/rahuldkjain/github-profile-readme-generator/master/src/images/icons/Social/facebook.svg" alt="criciuma" height="30" width="40" /></a>
-<a href="https://instagram.com/rsakae" target="blank"><img align="center" src="https://raw.githubusercontent.com/rahuldkjain/github-profile-readme-generator/master/src/images/icons/Social/instagram.svg" alt="rsakae" height="30" width="40" /></a>
+<a href="https://instagram.com/devsakae" target="blank"><img align="center" src="https://raw.githubusercontent.com/rahuldkjain/github-profile-readme-generator/master/src/images/icons/Social/instagram.svg" alt="devsakae" height="30" width="40" /></a>
 </p>
 
 <h3 align="left">Languages and Tools:</h3>
