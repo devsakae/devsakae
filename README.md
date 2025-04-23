@@ -2,7 +2,7 @@
 <h3 align="center">Fullstack developer / DPO</h3>
 <p align="center">See <a href="https://devsakae.vercel.app" target=_blank>my portfolio</a>.</p>
 
-<h3 align="left">You can find me heree:</h3>
+<h3 align="left">You can find me here:</h3>
 <p align="left">
 <!-- <a href="https://twitter.com/sakae" target="blank"><img align="center" src="https://raw.githubusercontent.com/rahuldkjain/github-profile-readme-generator/master/src/images/icons/Social/twitter.svg" alt="sakae" height="30" width="40" /></a> -->
 <a href="https://linkedin.com/in/rodrigosakae" target="blank"><img align="center" src="https://raw.githubusercontent.com/rahuldkjain/github-profile-readme-generator/master/src/images/icons/Social/linked-in-alt.svg" alt="rodrigosakae" height="30" width="40" /></a>
