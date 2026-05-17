@@ -1,4 +1,4 @@
-# ðŸš€ Portfolio | Rodrigo Sakae
+# Portfolio | Rodrigo Sakae
 
 <div align="center">
   <img src="https://readme-typing-svg.demolab.com?font=Fira+Code&pause=1000&color=3B82F6&center=true&vCenter=true&width=435&lines=Hi,+I'm+Rodrigo+Sakae;Fullstack+Developer;DPO+%26+Attorney" alt="Typing SVG" />
@@ -12,7 +12,7 @@
 
 ---
 
-## » About Me
+## About Me
 
 I'm a **Fullstack Developer** with a unique background as an **Attorney** and **DPO** (Data Protection Officer). My journey into tech started early with QBasic and mIRC scripts, but after a life-changing event, I rediscovered my passion for coding through the **Trybe bootcamp**.
 
@@ -42,7 +42,7 @@ Today, I build modern, scalable web applications using the JavaScript/TypeScript
 ## Publications & Media
 
 Beyond coding, I contribute to the legal and tech community:
-- **Article**: "Os riscos da indústria 4.0" (Published in *Notícias do Dia*).
+- **Article**: "Os riscos da indÃºstria 4.0" (Published in *NotÃ­cias do Dia*).
 - **Interview**: "Professional View" radio show, discussing Data Privacy Law (LGPD) in Brazil.
 
 ---
